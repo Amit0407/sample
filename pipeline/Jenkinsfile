@@ -1,0 +1,40 @@
+pipeline{
+    
+    agent any
+    
+    stages{
+        
+        stage('Checkout'){
+           steps{
+            echo 'checking out !!'
+           }
+            
+        }
+        stage('compile'){
+          steps{
+             echo 'compile !!e' 
+              
+          }  
+            
+        }
+        stage('test'){
+            
+            steps{
+                
+                echo 'testing !!'
+            }
+            
+            
+        }
+         stage('deploy'){
+            
+            steps{
+                
+                echo 'deploying !!'
+            }
+         }
+            
+        }
+    }
+    
+    
